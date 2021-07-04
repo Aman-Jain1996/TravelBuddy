@@ -49,7 +49,14 @@ export default function App() {
               <div className="image-container">
                 <img alt="City" src={item.poster} />
               </div>
-              <div className="desc-container"></div>
+              <div className="text-container">
+                <span className="city">{item.name}</span>
+                <span className="country">{item.country}</span>
+                <span className="population">
+                  {item.population} | {item.size}`
+                </span>
+                <p>{item.fact}</p>
+              </div>
             </div>
           );
         })}
