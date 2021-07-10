@@ -20,9 +20,11 @@ export default function App() {
         <div className="image-container">
           <img src="images/hero.svg" alt="Logo" />
         </div>
-        <div className="desc-container">
-          Love Travelling.....
-          <br /> Check our recommendation
+        <div className="desc-container text-container text-bold">
+          Love Travelling or just bluffing people by putting Travel Freak in
+          insta bio
+          <br />
+          <br /> Check out the best recommendations from us for you next plan
         </div>
       </div>
 
@@ -40,27 +42,38 @@ export default function App() {
         })}
       </div>
 
-      <hr />
-
       <div>
         {travelDB[selectedCountry].map((item) => {
           return (
-            <div className="hero-container" key={item.city}>
+            <div className=" hero hero-container" key={item.city}>
               <div className="image-container">
-                <img alt="City" src={item.poster} />
+                <img className="image-container" alt="City" src={item.poster} />
               </div>
-              <div className="text-container">
-                <span className="city">{item.name}</span>
-                <span className="country">{item.country}</span>
-                <span className="population">
-                  {item.population} | {item.size}`
+              <div className="desc-container text-container">
+                <span className="city">
+                  <span className="heading">City : </span>
+                  {item.name}
                 </span>
-                <p>{item.fact}</p>
+                <span className="population">
+                  <span className="heading">Population : </span>
+                  {item.population} |{" "}
+                  <span className="heading">Area: &nbsp;</span>
+                  {item.size}`
+                </span>
+                <p className="city-desc">{item.fact}</p>
               </div>
             </div>
           );
         })}
       </div>
+
+      <footer>
+        <p>
+          The world is a book and those who do not travel read only one page ~
+          Saint Augustine
+        </p>
+        <p style={{ margin: "auto" }}>Made with 💛 by @AJ-Creations</p>
+      </footer>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 
 :root {
   --background: #334155;
@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Satisfy", cursive;
+  font-family: "Handlee", cursive;
 }
 
 header {
@@ -37,14 +37,42 @@ header div {
   max-width: var(--maxWidth);
   margin: auto;
   padding: 1rem;
+  border-radius: 2rem;
 }
 
 .hero {
   background: whitesmoke;
+  margin-bottom: 10px;
 }
 
 .desc-container {
   flex: 1;
+  padding: 1rem;
+}
+
+.text-container {
+  display: flex;
+  box-sizing: border-box;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.heading {
+  font-size: 1.2rem;
+}
+
+.city-desc {
+  margin: 0;
 }
 
 .image-container {
@@ -54,6 +82,11 @@ header div {
 .image-container img {
   width: 100%;
   height: 100%;
+}
+
+.city {
+  font-size: 1.3rem;
+  font-weight: bolder;
 }
 
 .country-container {
@@ -77,15 +110,24 @@ header div {
   margin: 1rem 0rem;
 }
 
-.text-container {
-  flex-direction: column;
-  flex: 1;
-  padding: 1rem;
-  align-content: center;
-}
-
 @media screen and (max-width: 600px) {
   .hero-container {
     flex-flow: column nowrap;
   }
+}
+
+footer {
+  background: var(--background);
+  min-height: 50px;
+  border-radius: 1.5rem 1.5rem 0 0;
+  box-sizing: border-box;
+}
+
+footer p {
+  box-sizing: border-box;
+  max-width: 600px;
+  padding: 1rem;
+  margin: 1rem auto 0 auto;
+  color: peachpuff;
+  text-align: center;
 }
