@@ -17,12 +17,12 @@ export default function App() {
       </header>
 
       <div className="hero hero-container">
+        <div className="image-container">
+          <img src="images/hero.svg" alt="Logo" />
+        </div>
         <div className="desc-container">
           Love Travelling.....
           <br /> Check our recommendation
-        </div>
-        <div className="image-container">
-          <img src="images/hero.svg" alt="Logo" />
         </div>
       </div>
 
