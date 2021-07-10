@@ -1,2 +1,3 @@
 # TravelBuddy
-Created with CodeSandbox
+
+Check the result @ [EmojiPedia]()
